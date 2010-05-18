@@ -1,0 +1,8 @@
+Configure SDL with something along these lines:
+
+./configure --host=arm-none-linux-gnueabi --enable-video-fbcon \
+				   --enable-input-events --enable-alsa --disable-video-directfb \
+				   --disable-video-opengl --prefix=/home/user/ARM \
+				   --without-x --disable-esd \
+				   --oldincludedir=/home/user/ARM/include \
+				   --includedir=/home/user/ARM/include
